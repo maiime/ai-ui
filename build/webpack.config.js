@@ -7,7 +7,7 @@ module.exports = {
   mode: 'development',
   entry: './src/ai-ui.js',
   output: {
-    filename: '[name].js',
+    filename: 'ai-ui.js',
     path: path.resolve(__dirname, '../dist')
   },
   module: {
@@ -63,5 +63,6 @@ module.exports = {
     contentBase: './dist',
     open: true,
     hot: true
-  }
+  },
+  devtool: 'eval-source-map'
 }
